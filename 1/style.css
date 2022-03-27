@@ -193,7 +193,7 @@ a {
 }
 
 .video-overlay:before {
-    content: '';
+    content: '1';
     position: absolute;
     width: 60px;
     height: 60px;
@@ -279,3 +279,25 @@ a {
     padding: 10px 0% 0px;
     font-size: 12px;
 }
+.master_img_go {
+    padding: 5px 5px 5px 5px;
+}
+.master_img_go img {
+    width: 255px;
+    height: 300px;
+    float: centr;
+  }
+  .master_img_go:hover:after {
+    width: 255px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 90px;
+    position: absolute;
+    margin-left: -255px;
+    content: 'Записаться к мастеру';
+    font-size: 14px;
+    font-weight: medium;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+  }
