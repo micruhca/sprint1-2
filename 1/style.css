@@ -47,11 +47,19 @@ a {
     padding: 30px 0 130px;
 }
 
-.header-top {
+.header_top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 120px;
 }
+
+.header_social {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 .logo {
     display: inline-block;
@@ -231,3 +239,26 @@ a {
     width: 30%;
   }
 
+/* ------ Блоки майн ------- */
+
+.uslug {
+
+}
+
+.master {
+    
+    
+}
+.master_t1 {
+    font-size: 16px;
+ 
+}
+
+.master_t2 {
+    font-size: 12px;
+; 
+}
+
+.master_f {
+    justify-content: flex-start;
+}
