@@ -249,19 +249,28 @@ a {
     
     
 }
-.master_t1 {
+.master_tt1 {
     font-size: 24px;
-
- 
 }
 
-.master_t2 {
+.master_tt2 {
     font-size: 12px;
-; 
 }
 
 .master_f {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+}
+.master_img {
+    padding: 5px 5px 5px 5px;
+}
+.master_img_t1 {
+    font-size: 12px;
+}
+.master_img_t2 {
+    font-size: 10px;
+}
+.master_img_t3{
+    font-size: 10px;
 }
