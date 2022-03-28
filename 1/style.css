@@ -316,5 +316,33 @@ a {
 .primary img {
     display: block;
     margin-left: auto;
-    margin-right: auto } 
+    margin-right: auto; 
+}
+
+
+/*======================================================= FOOTER =============================*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 45px;
+ 
+}
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.confidition {
+    color: #278AFF; 
+    text-decoration: underline;
+}
+
+.navigation__link_text_size {
+    font-size: 12px;
 }
