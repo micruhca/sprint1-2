@@ -302,4 +302,19 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    text-align: center; 
+}
+.primary_1 {
+    padding: 45px;
+}
+.primary_2 {
+    padding: 45px;
+}
+.primary_3 {
+    padding: 45px;
+}
+.primary img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto } 
 }
