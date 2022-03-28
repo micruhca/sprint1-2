@@ -136,18 +136,6 @@ a {
     bottom: -80px;
 }
 
-.wrapper1 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 120px;
-    margin-top:50px;
-}
-
-.footer {
-    
-    
-}
-
 .navigationf ul {
     list-style: none;
     padding: 0;
@@ -173,61 +161,6 @@ a {
     color: #333;
 }
 
-.video {
-    width: 445px;
-    height: 297px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-.overley {
-  background: #000;  
-  opacity: 0.2;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 2;
-}
-
-.video-overlay:before {
-    content: '1';
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: url("./images/Group.png") no-repeat center;
-    z-index: 3;
-    transition: 0.15s;
-}
-
-.video:after {
-    content: "Короткое видео о нас";
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 600;
-    position:absolute;
-    width: 100%;
-    text-align: center;
-    z-index: 3;
-    top: 168px;
-    left: 0;
-    color: #F8F6F7;
-}
-
-.video:hover:before {
-    transform: scale(1.1) translateX(-50%);
-}
-
-.video img {
-    object-fit: cover;
-}
-
-
 .pop {
     display: flex;
     flex-wrap: wrap;
@@ -239,7 +172,7 @@ a {
     width: 30%;
   }
 
-/* ------ Блоки майн ------- */
+/* ------ Блоки мастера ------- */
 
 .uslug {
 
@@ -287,7 +220,7 @@ a {
     height: 300px;
     float: centr;
   }
-  .master_img_go:hover:after {
+.master_img_go:hover:after {
     width: 255px;
     height: 300px;
     border-radius: 10px;
@@ -301,3 +234,72 @@ a {
     background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
   }
+
+  /* ------ Блоки о салоне ------- */
+
+.salon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+}
+
+.salon_t{
+    justify-content: flex-start;
+}
+.salon_video {
+    width: 445px;
+    height: 297px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.salon_video_overley {
+    background: #000;  
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.salon_video-overlay:before {
+    content: '1';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: img ("./images/knop.png"): no-repeat center;
+    z-index: 3;
+    transition: 0.15s;
+}
+.salon_video:after {
+    content: "Короткое видео о нас";
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    top: 168px;
+    left: 0;
+    color: #F8F6F7;
+}
+.salon_video:hover:before {
+    transform: scale(1.1) translateX(-50%);
+}
+
+.salon_video img {
+    object-fit: cover;
+}
+
+ /* ------ Блоки приемущество ------- */
+
+ .primary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
