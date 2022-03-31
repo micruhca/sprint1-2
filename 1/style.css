@@ -47,11 +47,19 @@ a {
     padding: 30px 0 130px;
 }
 
-.header-top {
+.header_top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 120px;
 }
+
+.header_social {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 .logo {
     display: inline-block;
@@ -128,18 +136,6 @@ a {
     bottom: -80px;
 }
 
-.wrapper1 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 120px;
-    margin-top:50px;
-}
-
-.footer {
-    
-    
-}
-
 .navigationf ul {
     list-style: none;
     padding: 0;
@@ -165,39 +161,121 @@ a {
     color: #333;
 }
 
-.video {
+.pop {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    height: 100%;
+    
+  }
+  .pop_1 {
+    width: 30%;
+  }
+
+/* ------ Блоки мастера ------- */
+
+.uslug {
+
+}
+
+.master {
+    
+    
+}
+.master_tt1 {
+    font-size: 48px;
+    font-weight:600;
+}
+
+.master_tt2 {
+    font-size: 16px;
+    padding: 10px 0% 5px;  
+}
+
+.master_f {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.master_img {
+    padding: 5px 5px 5px 5px;
+}
+.master_img_t1 {
+    padding: 10px 0% 5px; 
+    font-size: 18px;
+    font-weight:600;
+}
+.master_img_t2 {
+    font-size: 14px;
+}
+.master_img_t3{
+    padding: 10px 0% 0px;
+    font-size: 12px;
+}
+.master_img_go {
+    padding: 5px 5px 5px 5px;
+}
+.master_img_go img {
+    width: 255px;
+    height: 300px;
+    float: centr;
+  }
+.master_img_go:hover:after {
+    width: 255px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 90px;
+    position: absolute;
+    margin-left: -255px;
+    content: 'Записаться к мастеру';
+    font-size: 14px;
+    font-weight: medium;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+  }
+
+  /* ------ Блоки о салоне ------- */
+
+.salon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+}
+
+.salon_t{
+    justify-content: flex-start;
+}
+.salon_video {
     width: 445px;
     height: 297px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
 }
-
-.overley {
-  background: #000;  
-  opacity: 0.2;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 2;
+.salon_video_overley {
+    background: #000;  
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
 }
-
-.video-overlay:before {
-    content: '';
+.salon_video-overlay:before {
+    content: '1';
     position: absolute;
     width: 60px;
     height: 60px;
     top: 100px;
     left: 50%;
     transform: translateX(-50%);
-    background: url("./images/Group.png") no-repeat center;
+    background: img ("./images/knop.png"): no-repeat center;
     z-index: 3;
     transition: 0.15s;
 }
-
-.video:after {
+.salon_video:after {
     content: "Короткое видео о нас";
     font-size: 16px;
     line-height: 26px;
@@ -210,24 +288,61 @@ a {
     left: 0;
     color: #F8F6F7;
 }
-
-.video:hover::before {
+.salon_video:hover:before {
     transform: scale(1.1) translateX(-50%);
 }
 
-.video img {
+.salon_video img {
     object-fit: cover;
 }
 
+ /* ------ Блоки приемущество ------- */
 
-.pop {
+ .primary {
     display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-    height: 100%;
-    
-  }
-  .pop_1 {
-    width: 30%;
-  }
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center; 
+}
+.primary_1 {
+    padding: 45px;
+}
+.primary_2 {
+    padding: 45px;
+}
+.primary_3 {
+    padding: 45px;
+}
+.primary img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
 
+
+/*======================================================= FOOTER =============================*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 45px;
+ 
+}
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.confidition {
+    color: #278AFF; 
+    text-decoration: underline;
+}
+
+.navigation__link_text_size {
+    font-size: 12px;
+}
